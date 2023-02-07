@@ -2,7 +2,7 @@ spring:
   datasource:
     username: ${APP_DB_USER:postgres}
     password: ${APP_DB_PASS:postgres}
-    url: jdbc:postgresql://${APP_DB_HOST:localhost}:${APP_DB_PORT:5432}/${APP_DB_NAME:iw_db}
+    url: ${APP_DB_HOST:jdbc:postgresql://localhost:5432:iw_db}
   jpa:
     generate-ddl: true
     hibernate:
